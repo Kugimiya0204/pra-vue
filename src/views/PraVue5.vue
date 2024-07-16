@@ -9,6 +9,8 @@ function onInput(e) {
 </script>
 
 <template>
-  <input :value="text" @input="onInput" placeholder="Type here" />
-  <p>輸入的字串 :{{ text }}</p>
+  <div style="margin-top: 5%">
+    <input style="font-size: 30px" :value="text" @input="onInput" placeholder="Type here" />
+    <p style="font-size: 30px; font-weight: 900">輸入的字串 :{{ text }}</p>
+  </div>
 </template>

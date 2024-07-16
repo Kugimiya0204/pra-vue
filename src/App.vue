@@ -31,7 +31,6 @@ function changeRoute(e) {
 <template>
   <header>
     <div style="width: 60%; text-align: center; border: solid black 2px; margin-left: 20%">
-      z
       <span style="font-size: 40px; font-weight: bolder; margin-right: 5%">Vue 前端練習筆記</span>
       <select
         style="font-size: 20px"
@@ -47,7 +46,17 @@ function changeRoute(e) {
       </select>
     </div>
   </header>
-  <div style="text-align: center">
+  <div
+    style="
+      text-align: center;
+      border: double black 4px;
+      width: 80%;
+      height: 500px;
+      margin-top: 5%;
+      margin-left: 10%;
+      background-color: burlywood;
+    "
+  >
     <RouterView />
   </div>
 </template>

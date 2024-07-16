@@ -9,7 +9,9 @@ function toggle() {
 </script>
 
 <template>
-  <button @click="toggle">Toggle</button>
-  <h1 v-if="awesome">Vue is awesome!</h1>
-  <h1 v-if="!awesome">Oh no 😢</h1>
+  <div style="margin-top: 5%">
+    <button style="font-size: 20px" @click="toggle">Toggle</button>
+    <h1 v-if="awesome">Vue is awesome!</h1>
+    <h1 v-if="!awesome">Oh no 😢</h1>
+  </div>
 </template>

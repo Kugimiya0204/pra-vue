@@ -26,14 +26,21 @@ function removeTodo(todo) {
 </script>
 
 <template>
-  <form @submit.prevent="addTodo">
-    <input v-model="newTodo" required placeholder="new todo" />
-    <button>Add Todo</button>
-  </form>
-  <ul>
-    <li v-for="todo in todos" :key="todo.id">
-      {{ todo.text }}
-      <button @click="removeTodo(todo)">delete</button>
-    </li>
-  </ul>
+  <div style="margin-top: 5%">
+    <form @submit.prevent="addTodo">
+      <input
+        style="font-size: 20px; margin-right: 2%"
+        v-model="newTodo"
+        required
+        placeholder="new todo"
+      />
+      <button style="font-size: 20px">Add Todo</button>
+    </form>
+    <ol>
+      <li style="text-align: center" v-for="todo in todos" :key="todo.id">
+        {{ todo.text }}
+        <button @click="removeTodo(todo)">delete</button>
+      </li>
+    </ol>
+  </div>
 </template>

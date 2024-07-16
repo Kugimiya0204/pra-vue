@@ -23,7 +23,6 @@ const titlelist = ref([
 ]);
 
 function changeRoute(e) {
-  console.log(e.target.value);
   if (e.target.value != '') route.push(e.target.value);
 }
 </script>

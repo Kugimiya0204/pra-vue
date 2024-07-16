@@ -29,7 +29,15 @@ function changeRoute(e) {
 
 <template>
   <header>
-    <div style="width: 60%; text-align: center; border: solid black 2px; margin-left: 20%">
+    <div
+      style="
+        width: 60%;
+        text-align: center;
+        border: solid black 2px;
+        margin-left: 20%;
+        background-color: burlywood;
+      "
+    >
       <span style="font-size: 40px; font-weight: bolder; margin-right: 5%">Vue 前端練習筆記</span>
       <select
         style="font-size: 20px"
@@ -49,10 +57,10 @@ function changeRoute(e) {
     style="
       text-align: center;
       border: double black 4px;
-      width: 80%;
+      width: 60%;
       height: 500px;
       margin-top: 5%;
-      margin-left: 10%;
+      margin-left: 20%;
       background-color: burlywood;
     "
   >
@@ -60,8 +68,11 @@ function changeRoute(e) {
   </div>
 </template>
 
-<style scoped>
-button {
-  border: solid black 1px;
+<style>
+#app {
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://images.pexels.com/photos/942872/pexels-photo-942872.jpeg');
 }
 </style>
